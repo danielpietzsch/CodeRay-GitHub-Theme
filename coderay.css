@@ -3,11 +3,10 @@
   border: 1px solid #CCC;
   font-family: Monaco, "Courier New", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", monospace;
   color: #000;
-  padding: 1em 0px;
+  padding: 1em 0px 1em 1em;
 }
 .CodeRay pre {
   margin: 0px;
-  padding-left: 1em;
 }
 
 div.CodeRay { }
@@ -15,11 +14,14 @@ div.CodeRay { }
 span.CodeRay { white-space: pre; border: 0px; padding: 2px }
 
 table.CodeRay { border-collapse: collapse; width: 100%; padding: 2px }
-table.CodeRay td { padding: 2px 4px; vertical-align: top }
+table.CodeRay td {
+  padding: 1em 0.5em;
+  vertical-align: top;
+}
 
 .CodeRay .line_numbers, .CodeRay .no {
-  background-color: #def;
-  color: gray;
+  background-color: #ECECEC;
+  color: #AAA;
   text-align: right;
 }
 .CodeRay .line_numbers tt { font-weight: bold }
