@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>CodeRay Stylesheet Example</title>
+	<link rel="stylesheet" href="coderay.css" type="text/css">
+</head>
+<body>
+	<h1>Example</h1>
+  <p>Here's a Ruby code snippet that was scanned with CodeRay like this:</p>
+
+	<p><code>CodeRay.scan("class Hello\n  def say_hello_to(name = \"Joe\")\n    puts \"Hello \#\{name\}\"\n  end\nend\n\nh = Hello.new\nh.say_hello_to(\"Jane\")\n# => Hello Jane", :ruby).div(:css => :class)</code></p>
+
+<div class="CodeRay">
+  <div class="code"><pre><span class="keyword">class</span> <span class="class">Hello</span>
+  <span class="keyword">def</span> <span class="function">say_hello_to</span>(name = <span class="string"><span class="delimiter">&quot;</span><span class="content">Joe</span><span class="delimiter">&quot;</span></span>)
+    puts <span class="string"><span class="delimiter">&quot;</span><span class="content">Hello </span><span class="inline"><span class="inline-delimiter">#{</span>name<span class="inline-delimiter">}</span></span><span class="delimiter">&quot;</span></span>
+  <span class="keyword">end</span>
+<span class="keyword">end</span>
+
+h = <span class="constant">Hello</span>.new
+h.say_hello_to(<span class="string"><span class="delimiter">&quot;</span><span class="content">Jane</span><span class="delimiter">&quot;</span></span>)
+<span class="comment"># =&gt; Hello Jane</span></pre></div>
+</div>
+</body>
+</html>
